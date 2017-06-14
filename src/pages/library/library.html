@@ -19,6 +19,8 @@ Select your favorite quote
   <button ion-item
   *ngFor = "let quoteGroup of quoteCollection"
 
+[navPush] = "quotesPage" [navParams] = "quoteGroup"
+
   > 
   <ion-icon [name]="quoteGroup.icon"
   
